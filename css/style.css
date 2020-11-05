@@ -17,9 +17,7 @@ body {
   padding: 40px 20px;
 }
 
-.container__nav-left,
-.container__nav-right,
-.nav-right {
+.container__nav-left,.container__nav-right,.nav-right {
   display: flex;
   align-items: center;
 }
@@ -28,14 +26,12 @@ body {
   width: 100px;
 }
 
-.nav-right li,
-.nav-left li {
+.nav-right li,.nav-left li {
   list-style: none;
   display: inline-block;
 }
 
-.nav-right a,
-.nav-left a {
+.nav-right a,.nav-left a {
   text-decoration: none;
   padding: 20px 0 20px 25px;
 }
@@ -44,10 +40,7 @@ body {
   text-transform: uppercase;
 }
 
-.nav-right a:hover,
-.nav-left a:hover,
-.nav-right a:active,
-.nav-left a:active {
+.nav-right a:hover,.nav-left a:hover,.nav-right a:active,.nav-left a:active {
   color: rgb(23, 23, 23);
 }
 .link {
