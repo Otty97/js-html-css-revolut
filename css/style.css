@@ -1,18 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Roboto, -apple-system, "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
-header {
-  height: 100px;
-  line-height: 80px;
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1376px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-img {
-  width: 70%;
-  height: 100%;
+.container__nav-left,
+.container__nav-right,
+.nav-right {
+  display: flex;
+  align-items: center;
 }
 
-.logo {
-  line-height: 80px;
-  text-align: right;
+.container__nav-left img {
+  width: 100px;
+}
+
+.nav-right li,
+.nav-left li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-right a,
+.nav-left a {
+  text-decoration: none;
+  padding: 20px 0 20px 25px;
+}
+
+.nav-left a {
+  text-transform: uppercase;
+}
+
+.nav-right a:hover,
+.nav-left a:hover,
+.nav-right a:active,
+.nav-left a:active {
+  color: rgb(23, 23, 23);
+}
+.link {
+  color: rgb(139, 149, 158);
+}
+.link-active {
+  color: #000000;
+}
+.text-pink::after {
+  content: "Beta";
+  vertical-align: top;
+  font-size: 10px;
+  color: rgb(235, 0, 141);
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.nav-right i {
+  font-size: 10px;
+  margin-left: 7px;
+}
+
+.nav-right .fa-bars {
+  font-size: 20px;
+  display: none;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #eb008d;
+  border-radius: 50px;
+  padding: 11px 20px;
+  border: 1px solid #eb008d;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(210, 0, 126);
+}
+
+.parent-dropdown {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #ffffff;
+  padding: 0 20px 0 20px;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+  display: none;
+  white-space: nowrap;
+}
+
+.dropdown a {
+  padding-left: 0;
+}
+
+.dropdown li {
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  display: inline-block;
 }

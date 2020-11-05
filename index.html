@@ -1,58 +1,95 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <title>Revolut</title>
-    </head>
-    <body>
-      <header class="header">
-       <div class="container">
-        <div class="row">
+<html lang="it">
 
-         <div class="col-lg-2">
-             <div class="logo">
-               <img src="img/revolut.png" alt="revolut">
-             </div>
-         </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Revolut</title>
+</head>
 
-         <div class="col-lg-3">
-           <div class="row">
-            <a class="a-navbar" href="#">PERSONALE</a>
-            <a class="a-navbar" href="#">BUSINESS</a>
-           </div>
-         </div>
+<body>
+  <header>
+    <div class="container">
+      <div class="container__nav-left">
+        <a href="#"><img src="img/logo.png" alt="logo revolut"></a>
+        <nav>
+          <ul class="nav-left display-none-md">
+            <li><a class="link link-active" href="#">Personale</a></li>
+            <li><a  class="link" href="#">Business</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container__nav-right">
 
-         <div class="col-lg-5">
-           <div class="row">
-            <a class="a-navbar" href="#">Tariffazione</a>
-            <a class="a-navbar" href="#">Conti</a>
-            <a class="a-navbar" href="#">Prodotti</a>
-            <a class="a-navbar" href="#">Azienda</a>
-            <a class="a-navbar" href="#">Aiuto</a>
-            <a class="a-navbar" href="#">IT</a>
-           </div>
-         </div>
+        <ul class="nav-right display-none-md ">
+          <li><a  class="link" href="#">Tariffazione</a></li>
+          <li class="parent-dropdown">
+            <a class="link" href="#">Accounts</a>
+            <ul class="dropdown">
+              <li><a class="link" href="#">Standard</a></li>
+              <li><a class="link" href="#">Premium</a></li>
+              <li><a class="link" href="#">Metal</a></li>
+            </ul>
+          </li>
+          <li class="parent-dropdown link">
+            <a  class="link" href="#">Prodotti</a>
+            <ul class="dropdown dropdown2">
+              <li><a class="link" href="#">Trasferisci denaro</a></li>
+              <li><a class="link" href="#">Vault</a></li>
+              <li><a class="link" href="#">Gestione Budget</a></li>
+              <li><a class="link text-pink" href="#">Perk</a></li>
+              <li><a class="link" href="#">Criptovaluta</a></li>
+              <li><a class="link" href="#">Assicurazione Smartphone</a></li>
+              <li><a class="link" href="#">assicurazione medica internazionale</a></li>
+              <li><a class="link text-pink" href="#">API di open banking</a></li>
+              <li><a class="link text-pink" href="#">Apple Pay</a></li>
+            </ul>
+          </li>
+          <li class="parent-dropdown">
+            <a  class="link" href="#">Azienda</a>
+            <ul class="dropdown dropdown2">
+              <li><a class="link" href="#">Chi siamo</a></li>
+              <li><a class="link" href="#">Blog</a></li>
+              <li><a class="link" href="#">Lavora con noi</a></li>
+              <li><a class="link" href="#">Affilates</a></li>
+              <li><a class="link" href="#">Influencer</a></li>
+              <li><a class="link" href="#">Contatto</a></li>
+            </ul>
+          </li>
+          <li class="parent-dropdown">
+            <a class="link" href="#">Aiuto</a>
+            <ul class="dropdown dropdown2">
+              <li><a class="link" href="#">Community</a></li>
+              <li><a class="link" href="#">Centro assistenza</a></li>
+              <li><a class="link" href="#">Security</a></li>
+              <li><a class="link" href="#">Stato di sistema</a></li>
+            </ul>
+          </li>
+          <li class="parent-dropdown">
+            <a class="link" href="#">IT<i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a class="link" href="#">Italiano</a></li>
+              <li><a class="link" href="#">Inglese</a></li>
+            </ul>
+          </li>
+          <li><button class="button" type="button" name="button">Scarica L'app</button></li>
+        </ul>
+        <ul class="nav-right ">
+          <li><a class="link" href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
 
-         <div class="col-lg-2">
-          <div class="scaricaApp">
-            <button class="btn btn-primary botton1" type="submit">Scarica l'app</button>
-          </div>
-         </div>
 
-       </div>
-     </div>
-   </header>
+      </div>
+    </div>
+  </header>
+  <main></main>
+  <footer></footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
 
-
-
-
-
-        <script src="js/main.js"></script>
-    </body>
 </html>
